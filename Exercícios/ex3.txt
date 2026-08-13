@@ -1,0 +1,18 @@
+﻿string Nome = "João Programador";
+string Email = "joao.prog@exemplo.com";
+int anoNascimento = 2009;
+bool Disponivel = true;
+int idade = DateTime.Now.Year - anoNascimento;
+
+Console.WriteLine("-------- Cartão Digital ---------");
+Console.WriteLine($"Nome: {Nome}");
+Console.WriteLine($"Email: {Email}");
+Console.WriteLine($"Idade: {idade} anos");
+Console.WriteLine($"Status: {(Disponivel ? "Dísponível para projetos!" : "Não disponível no momento")}.");
+
+Console.WriteLine("-------- Status Atualizado ---------");
+Console.WriteLine($"Nome: {Nome}");
+Console.WriteLine($"Email: {Email}");
+Console.WriteLine($"Idade: {idade} anos");
+Console.WriteLine($"Status: {(Disponivel ? "Não disponível no momento" : "Dísponível para projetos!")}.");
+Console.ReadLine();

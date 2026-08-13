@@ -1,0 +1,9 @@
+﻿double precoitem1 = 12.50;
+double precoitem2 = 5.99;
+double precoitem3 = 20;
+double valorTotal = precoitem1 + precoitem2 + precoitem3;
+Console.WriteLine($"O Valor do item 1 : {precoitem1}");
+Console.WriteLine($"O Valor do item 2 : {precoitem2}");
+Console.WriteLine($"O Valor do item 3 : {precoitem3}");
+Console.WriteLine($"O valor total é : {valorTotal}");
+Console.ReadLine(); 
