@@ -1,0 +1,12 @@
+﻿int qtdSalgadinho = 2;
+double precoSalgadinho = 3.50;
+int qtdRefri = 1;
+double precoRefri = 4.00;
+double valorSalgadinho = precoSalgadinho * qtdSalgadinho;
+double valorRefri = precoRefri * qtdRefri;
+double valorTotal = valorRefri + valorSalgadinho;
+
+Console.WriteLine($"Custo do Salgadinho: {valorSalgadinho},00");
+Console.WriteLine($"Custo do Refrigerante: {valorRefri},00");
+Console.WriteLine($"Valor Total: {valorTotal},00");
+Console.ReadLine();

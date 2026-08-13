@@ -1,0 +1,14 @@
+﻿string senhaCorreta = "aulaCsharp";
+string senhaDigitada = "aulaCsharp";
+
+if (senhaDigitada == senhaCorreta)
+{
+    Console.WriteLine("Senha correta!");
+
+}
+else
+{
+    Console.WriteLine("Senha Incorreta, tente novamente");
+}
+Console.ReadLine();
+
