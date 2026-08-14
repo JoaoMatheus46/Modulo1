@@ -1,0 +1,12 @@
+double nota1 = 7.5;
+double nota2 = 8.0;
+double nota3 = 6.5;
+double media = (nota1 + nota2 + nota3) / 3;
+int freq = 80;
+bool aprovado = media >= 7.0 && freq >= 75;
+bool reprovado = media < 7.0 || freq < 75;
+
+Console.WriteLine($"Frequeência do aluno: {freq}%");
+Console.WriteLine($"Média do aluno: {media:F2} ");
+Console.WriteLine($"Aprovado?: {aprovado}");
+Console.ReadLine();
