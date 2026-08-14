@@ -1,0 +1,18 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        double nota1 = 8.5;
+        double nota2 = 7.0;
+        double nota3 = 9.0;
+
+        double media = (nota1 + nota2 + nota3) / 3;
+
+        Console.WriteLine($"A média do aluno é {media:F2}");
+    }
+
+    public static double CalcularMedia(double nota1, double nota2, double nota3)
+    {
+        return (nota1 + nota2 + nota3) / 3;
+    }
+}
