@@ -1,0 +1,13 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        OlaMundo();
+
+    }
+
+    public static void OlaMundo()
+    {
+        Console.WriteLine("Olá, mundo de programação!");
+    }
+}
