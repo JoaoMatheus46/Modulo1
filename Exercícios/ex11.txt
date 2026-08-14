@@ -1,0 +1,37 @@
+using System.Globalization;
+
+double totalCompra = 0.0;
+char continuarComprando = 's';
+
+while (continuarComprando == 's')
+{
+    double precoItem;
+    while (true)
+    {
+        Console.Write("Digite o preço do item: R$ ");
+        string? input = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(input))
+        {
+            Console.WriteLine("Entrada vazia. Digite um número válido.");
+            continue;
+        }
+
+        if (double.TryParse(input, NumberStyles.Number, CultureInfo.CurrentCulture, out precoItem))
+        {
+            break;
+        }
+
+        Console.WriteLine("Preço inválido. Use apenas números (ex: 12,50).");
+    }
+
+    totalCompra += precoItem;
+
+    Console.Write("Deseja continuar? (s/n): ");
+    string? resp = Console.ReadLine();
+    if (string.IsNullOrEmpty(resp))
+        continuarComprando = 'n';
+    else
+        continuarComprando = char.ToLower(resp[0]);
+}
+
+Console.WriteLine($"Total da compra: R$ {totalCompra:F2}");
